@@ -23,8 +23,10 @@
         transparent 0%,
         rgb(0 0 0 / 100%) 100%
       );
-
-      // background: black;
     }
+  }
+
+  &__attention {
+    color: $color_attention;
   }
 }

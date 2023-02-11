@@ -35,16 +35,21 @@
 
 /* View */
 .button.button_view_primary {
-  background: blue;
+  background: $color_attention;
+  box-shadow: 0 24px 60px $color_attention;
 
   & .button__text {
-    color: white;
+    color: $color_light;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
   }
 
   &:hover {
-    background: lightblue;
+    background: $color_active;
+    box-shadow: 0 24px 60px $color_active;
   }
-  @include ts(background);
+  @include ts(background, box-shadow);
 }
 
 .button.button_view_secondary {
@@ -206,14 +211,14 @@
 
 /* XL - Начало */
 .button.button_size_xl {
-  border-radius: 10px;
+  border-radius: 80px;
 
-  font-size: 18px;
-  line-height: 38px;
+  font-size: 46px;
+  line-height: 100px;
 }
 
 .button_size_xl .button__text {
-  margin: 0 18px;
+  margin: 0 100px;
 }
 
 /* XL - КОНЕЦ */
