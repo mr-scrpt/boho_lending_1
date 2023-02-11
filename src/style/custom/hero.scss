@@ -12,14 +12,18 @@
   &__img {
     position: absolute;
     bottom: 0;
-    left: 100px;
+    left: 0;
 
     display: none;
 
     max-height: 900px;
 
-    @include bp480-block {
+    @include bp768-block {
       display: block;
+    }
+
+    @include bp768-block {
+      left: 20px;
     }
   }
 
@@ -38,10 +42,14 @@
     z-index: 2;
     top: 50%;
 
+    left: 50%;
+
     // max-width: 800px;
     display: inline-block;
 
-    transform: translateY(-50%);
+    width: 100%;
+
+    transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
 
@@ -68,7 +76,7 @@
     }
 
     @include bp768-block {
-      right: 100px;
+      // right: 100px;
     }
   }
 
@@ -80,6 +88,10 @@
     line-height: 48px;
 
     // z-index: 1;
+    @include bp480-block {
+      font-size: 50px;
+      line-height: 60px;
+    }
 
     @include bp1440-block {
       font-size: 100px;
@@ -94,6 +106,10 @@
 
     font-size: 36px;
     line-height: 42px;
+    @include bp480-block {
+      font-size: 40px;
+      line-height: 50px;
+    }
     @include bp1440-block {
       font-size: 80px;
       line-height: 100px;
@@ -107,6 +123,10 @@
 
     font-size: 24px;
     line-height: 30px;
+    @include bp480-block {
+      font-size: 32px;
+      line-height: 40px;
+    }
     @include bp1440-block {
       font-size: 64px;
       line-height: 90px;
