@@ -1,0 +1,24 @@
+.layout {
+  &__inner {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100%;
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    @include wrapper;
+  }
+
+  &__fs {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 600px;
+  }
+}

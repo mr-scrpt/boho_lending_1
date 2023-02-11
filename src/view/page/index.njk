@@ -1,0 +1,16 @@
+{% set inject = { layoutClass: "page page_theme layout deco"} %}
+{% extends "layout/layout.njk" %}
+{% block main %}
+    <!-- Hero seciton -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: '',
+    sectionClass: 'layout__fs deco__hero deco__shadow'
+    } %}
+    {% include "section/hero-section.njk" %}
+    <!-- Hero seciton END -->
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock main %}

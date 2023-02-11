@@ -1,0 +1,32 @@
+.arrow {
+  &__inner {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 15px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid blue;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: blue;
+
+      .arrow__icon {
+        background-color: orange;
+      }
+    }
+    @include ts(background-color);
+  }
+}
