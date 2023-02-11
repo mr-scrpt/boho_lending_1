@@ -213,12 +213,21 @@
 .button.button_size_xl {
   border-radius: 80px;
 
-  font-size: 46px;
-  line-height: 100px;
+  font-size: 24px;
+  line-height: 60px;
+  @include bp1440-block {
+    border-radius: 80px;
+
+    font-size: 46px;
+    line-height: 100px;
+  }
 }
 
 .button_size_xl .button__text {
-  margin: 0 100px;
+  margin: 0 65px;
+  @include bp1440-block {
+    margin: 0 100px;
+  }
 }
 
 /* XL - КОНЕЦ */

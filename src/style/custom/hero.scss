@@ -14,11 +14,19 @@
     bottom: 0;
     left: 100px;
 
+    display: none;
+
     max-height: 900px;
+
+    @include bp480-block {
+      display: block;
+    }
   }
 
   &__logo {
     position: absolute;
+
+    z-index: 5;
     top: 50px;
     left: 50%;
 
@@ -29,7 +37,6 @@
     position: absolute;
     z-index: 2;
     top: 50%;
-    right: 100px;
 
     // max-width: 800px;
     display: inline-block;
@@ -59,15 +66,25 @@
       background-color: $color_active;
       filter: blur(110px);
     }
+
+    @include bp768-block {
+      right: 100px;
+    }
   }
 
   &__present-main {
     position: relative;
 
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+
     // z-index: 1;
 
-    font-size: 100px;
-    line-height: 140px;
+    @include bp1440-block {
+      font-size: 100px;
+      line-height: 140px;
+    }
   }
 
   &__present-sub {
@@ -75,8 +92,12 @@
 
     margin-bottom: 40px;
 
-    font-size: 80px;
-    line-height: 100px;
+    font-size: 36px;
+    line-height: 42px;
+    @include bp1440-block {
+      font-size: 80px;
+      line-height: 100px;
+    }
   }
 
   &__present-secondary {
@@ -84,7 +105,11 @@
 
     margin-bottom: 40px;
 
-    font-size: 64px;
-    line-height: 90px;
+    font-size: 24px;
+    line-height: 30px;
+    @include bp1440-block {
+      font-size: 64px;
+      line-height: 90px;
+    }
   }
 }
