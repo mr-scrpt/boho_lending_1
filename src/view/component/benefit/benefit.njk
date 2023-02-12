@@ -1,0 +1,14 @@
+<div class="benefit">
+    <div class="benefit__inner">
+        {% for item in benefit.benefit_list %}
+            <div class="benefit__item">
+                <div class="benefit__item-imgbox">
+                    <img src="/img/regular/benefit/{{ item.img }}.svg"
+                         alt="{{ item.name }}"
+                         class="benefit__item-img img">
+                </div>
+                <div class="benefit__item-name">{{ item.name | safe }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

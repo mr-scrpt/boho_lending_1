@@ -1,0 +1,20 @@
+{
+  "benefit_list": [
+    {
+      "name": "Minute<br> registration",
+      "img": "benefit_reg"
+    },
+    {
+      "name": "Instant<br> deposit",
+      "img": "benefit_deposit"
+    },
+    {
+      "name": "Fast<br> payouts",
+      "img": "benefit_payout"
+    },
+    {
+      "name": "licensed and<br> regulated",
+      "img": "benefit_license"
+    }
+  ]
+}

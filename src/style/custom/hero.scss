@@ -23,7 +23,28 @@
     }
 
     @include bp768-block {
-      left: 20px;
+      left: -50px;
+
+      max-height: 500px;
+    }
+    @include bp768-block {
+      left: 50px;
+
+      max-height: 500px;
+    }
+    @include bp994-block {
+      max-height: 600px;
+    }
+    @include bp1100-block {
+      // left: 50px;
+
+      max-height: 650px;
+    }
+    @include bp1440-block {
+      max-height: 800px;
+    }
+    @include bp1600-block {
+      max-height: 850px;
     }
   }
 
@@ -35,6 +56,9 @@
     left: 50%;
 
     transform: translateX(-50%);
+    @include bp768-block {
+      top: 20px;
+    }
   }
 
   &__present {
@@ -42,14 +66,14 @@
     z-index: 2;
     top: 50%;
 
-    left: 50%;
+    right: 50%;
 
     // max-width: 800px;
     display: inline-block;
 
     width: 100%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
     text-align: center;
     text-transform: uppercase;
 
@@ -76,7 +100,26 @@
     }
 
     @include bp768-block {
-      // right: 100px;
+      right: 20px;
+
+      width: auto;
+
+      transform: translate(0, -50%);
+    }
+
+    @include bp994-block {
+      right: 50px;
+    }
+
+    @include bp1440-block {
+      width: auto;
+
+      transform: translate(0, -50%);
+    }
+    @include bp1600-block {
+      right: 100px;
+
+      transform: translate(0, -50%);
     }
   }
 
@@ -93,6 +136,10 @@
       line-height: 60px;
     }
 
+    @include bp1100-block {
+      font-size: 68px;
+      line-height: 80px;
+    }
     @include bp1440-block {
       font-size: 100px;
       line-height: 140px;
@@ -109,6 +156,10 @@
     @include bp480-block {
       font-size: 40px;
       line-height: 50px;
+    }
+    @include bp1100-block {
+      font-size: 58px;
+      line-height: 70px;
     }
     @include bp1440-block {
       font-size: 80px;
@@ -127,6 +178,12 @@
       font-size: 32px;
       line-height: 40px;
     }
+
+    @include bp480-block {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
     @include bp1440-block {
       font-size: 64px;
       line-height: 90px;

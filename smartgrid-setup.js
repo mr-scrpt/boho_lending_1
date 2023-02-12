@@ -10,8 +10,11 @@ const settings = {
     fields: '15px' /* side fields */,
   },
   breakPoints: {
+    bp1600: {
+      width: '1599px',
+    },
     bp1440: {
-      width: '1399px',
+      width: '1439px',
     },
     bp1100: {
       width: '1099px',

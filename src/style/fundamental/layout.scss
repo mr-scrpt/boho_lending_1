@@ -15,14 +15,39 @@
     @include wrapper;
   }
 
+  &__container {
+    margin: auto;
+
+    &_standart {
+      max-width: 1680px;
+    }
+  }
+
   &__fs {
     width: 100vw;
     max-width: 100%;
     height: 100vh;
+    @include bp768-block {
+      min-height: 500px;
+      max-height: 800px;
+    }
+    @include bp994-block {
+      min-height: 600px;
+      max-height: 900px;
+    }
 
     @include bp1440-block {
       min-height: 900px;
       max-height: 1250px;
+    }
+  }
+
+  &__pit {
+    @include bp994-block {
+      margin-bottom: -20px;
+    }
+    @include bp1440-block {
+      margin-bottom: -100px;
     }
   }
 }

@@ -7,13 +7,17 @@
                     <div class="title__text">{{ inject.sectionTitle }}</div>
                 </div>
             {% endif %}
-            {% block section %}
-            {% endblock section %}
-            {% if inject.deco %}
-                <div class="section__deco">
-                    <img src="/img/icons/icon__flower.svg" alt="" class="deco__pattern img" />
-                </div>
-            {% endif %}
+            {% if inject.sectionContainer %}
+                <div class="layout__container layout__container_{{ inject.sectionContainer }}">
+                {% endif %}
+                {% block section %}
+                {% endblock section %}
+                {% if inject.sectionContainer %}</div>{% endif %}
+                {% if inject.deco %}
+                    <div class="section__deco">
+                        <img src="/img/icons/icon__flower.svg" alt="" class="deco__pattern img" />
+                    </div>
+                {% endif %}
+            </div>
         </div>
-    </div>
-</section>
+    </section>

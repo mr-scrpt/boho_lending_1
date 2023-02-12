@@ -5,12 +5,17 @@
     {% set inject = {
     wrapper: 'wrap',
     sectionInner: '',
-    sectionClass: 'layout__fs deco__hero deco__shadow'
+    sectionClass: 'layout__fs layout__pit deco__hero deco__shadow'
     } %}
     {% include "section/hero-section.njk" %}
     <!-- Hero seciton END -->
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Hero seciton -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: '',
+    sectionClass: '',
+    sectionContainer: 'standart'
+    } %}
+    {% include "section/benefit-section.njk" %}
+    <!-- Hero seciton END -->
 {% endblock main %}

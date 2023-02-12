@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include bp480-block {
-      background-image: url('/img/regular/hero/hero_bg.png');
+      background-image: url('/img/regular/hero/hero_bg-alt.png');
     }
   }
 
@@ -24,10 +24,16 @@
       background: linear-gradient(
         180deg,
         transparent 0%,
-        rgb(0 0 0 / 100%) 100%
+        rgba($color_dark, 100%) 100%
       );
       @include bp768-block {
-        height: 250px;
+        height: 150px;
+      }
+      @include bp994-block {
+        height: 180px;
+      }
+      @include bp1440-block {
+        height: 200px;
       }
     }
   }
