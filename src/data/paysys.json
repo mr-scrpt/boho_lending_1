@@ -1,7 +1,16 @@
 {
-	"phone_numbers": [
-		"+3 8 097 000 00 00",
-		"+3 8 097 000 00 00",
-		"+3 8 097 000 00 00"
-	]
+  "paysys_list": {
+    "australia": [
+      "interac",
+      "visa",
+      "neosurf",
+      "flexepin",
+      "mifinity",
+      "ecopayz",
+      "btc",
+      "eth",
+      "idebit",
+      "skrill"
+    ]
+  }
 }

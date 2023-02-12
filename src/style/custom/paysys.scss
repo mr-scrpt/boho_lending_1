@@ -1,0 +1,58 @@
+.paysys {
+  position: relative;
+
+  padding-bottom: 40px;
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 15px;
+
+    border-radius: 4px;
+
+    background-color: $color_dark_light;
+  }
+
+  // &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  //   bottom: 0;
+
+  //   // transform: translateY(100%);
+  // }
+}
+
+.paysys {
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    bottom: 0;
+
+    opacity: 1;
+    background-color: $color_passive;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $color_attention;
+    }
+  }
+
+  & .swiper-slide {
+    height: auto;
+  }
+}
+
+// .swiper-slide {
+//   height: auto !important;
+// }

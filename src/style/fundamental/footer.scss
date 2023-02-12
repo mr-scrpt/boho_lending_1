@@ -1,4 +1,44 @@
 .footer {
   &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    @include bp994-block {
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 25px;
+    }
+  }
+
+  &__imgbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    @include bp994-block {
+      width: auto;
+    }
+  }
+
+  &__img {
+    min-width: 280px;
+  }
+
+  &__text {
+    color: $color_passive;
+
+    font-style: 12px;
+    line-height: 20px;
+
+    @include bp768-block {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    @include bp994-block {
+      flex-grow: 1;
+    }
+    @include bp1440-block {
+      // padding-right: 60px;
+    }
   }
 }

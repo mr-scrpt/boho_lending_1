@@ -38,6 +38,29 @@
     }
   }
 
+  &__shadow-r {
+    position: relative;
+
+    &::before {
+      position: absolute;
+
+      z-index: 2;
+      top: 0;
+      right: 0;
+
+      width: 30px;
+      height: 100%;
+
+      content: '';
+
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba($color_dark, 100%) 100%
+      );
+    }
+  }
+
   &__attention {
     color: $color_attention;
   }

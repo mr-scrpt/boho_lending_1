@@ -1,0 +1,18 @@
+<div class="paysys">
+    <div class="paysys__inner ">
+        <div class="swiper paysys__slider deco__shadow-r">
+            <div class="paysys__list swiper-wrapper">
+                {% for item in paysys.paysys_list.australia %}
+                    <div class="paysys__item swiper-slide">
+                        <div class="paysys__imgbox">
+                            <img src="/img/regular/paysys/paysys_{{ item }}.svg"
+                                 alt="{{ item }}"
+                                 class="paysys__img img">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="paysys__pagination swiper-pagination"></div>
+    </div>
+</div>
